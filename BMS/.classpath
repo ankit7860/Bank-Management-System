@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/Software/jars/hamcrest-all-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/aspectjrt-1.7.4.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/commons-pool-1.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/hibernate-commons-annotations-4.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/hibernate-core-4.1.9.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/hibernate-entitymanager-4.1.9.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/hibernate-validator-4.3.1.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/jackson-annotations-2.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/jackson-core-2.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/jackson-databind-2.4.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/javassist-3.17.1-GA.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/jboss-logging-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/jcl-over-slf4j-1.7.5.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/junit-4.7.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/mysql-connector-java-5.1.14.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/slf4j-log4j12-1.7.5.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-aop-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-aop-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-aop-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-aspects-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-aspects-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-aspects-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-beans-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-beans-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-beans-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-context-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-context-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-context-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-context-support-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-context-support-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-context-support-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-core-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-core-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-core-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-expression-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-expression-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-expression-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-instrument-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-instrument-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-instrument-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-instrument-tomcat-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-instrument-tomcat-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-instrument-tomcat-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-jdbc-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-jdbc-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-jdbc-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-jms-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-jms-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-jms-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-orm-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-orm-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-orm-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-oxm-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-oxm-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-oxm-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-struts-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-struts-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-struts-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-test-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-test-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-test-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-tx-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-tx-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-tx-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-web-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-web-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-web-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-webmvc-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-webmvc-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-webmvc-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-webmvc-portlet-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-webmvc-portlet-3.2.18.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/spring-webmvc-portlet-3.2.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Software/jars/validation-api-1.0.0.GA (1).jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
