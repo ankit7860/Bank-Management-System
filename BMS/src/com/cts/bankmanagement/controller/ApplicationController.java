@@ -14,6 +14,7 @@ public class ApplicationController {
 
 	static Logger LOG = Logger.getLogger(ApplicationController.class.getName());
 
+	@SuppressWarnings("unused")
 	@RequestMapping(value = "/performtransaction", method = RequestMethod.POST)
 	public String showTestPage(String accountNumber, @RequestParam(value = "customerName") String customerName,
 			@RequestParam(value = "transactionType") String transactionType,
@@ -24,6 +25,7 @@ public class ApplicationController {
 			double b = Double.parseDouble(transactionAmount);
 			return "forward:/performtransactional";
 		} catch (Exception e) {
+			System.out.println("aaaaaaaaaaaaaaaaaaaaaaa");
 			return "forward:/errors";
 		}
 	}

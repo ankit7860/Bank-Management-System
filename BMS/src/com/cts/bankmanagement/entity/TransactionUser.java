@@ -51,7 +51,6 @@ public class TransactionUser implements Serializable {
 		this.transactionAmount = transactionAmount;
 	}
 
-
 	public Long getTransactionId() {
 		return transactionId;
 	}
@@ -96,5 +95,4 @@ public class TransactionUser implements Serializable {
 		return serialVersionUID;
 	}
 
-	
 }

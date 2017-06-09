@@ -26,9 +26,10 @@
 <div>
 	<%@ include file="/WEB-INF/static/html/Header.html"%>
 </div>
-<body background="/BaseCodeSlice_BankManagementSystem/pages/Images/A.jpg">
+<body
+	background="/BaseCodeSlice_BankManagementSystem/pages/Images/A.jpg">
 	<div class="has-danger" align="center" style="padding-top: 80px">
 		<h1>${errorMsg}</h1>
 	</div>
-	</body>
-	</html>
+</body>
+</html>

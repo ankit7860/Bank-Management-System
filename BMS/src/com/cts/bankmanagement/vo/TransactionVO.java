@@ -19,7 +19,7 @@ public class TransactionVO {
 	@Pattern(regexp = "(?i)Deposit|(?i)Withrawal", message = "Empty or invalid transaction type")
 	private String transactionType;
 
-	@NotNull( message = "Transaction Amount should be greater 0")
+	@NotNull(message = "Transaction Amount should be greater 0")
 	@Range(min = 1, message = "Transaction Amount should be greater 0")
 	private Double transactionAmount;
 	private String description;

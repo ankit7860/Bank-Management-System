@@ -9,7 +9,7 @@ import com.cts.bankmanagement.entity.TransactionUser;
 import com.cts.bankmanagement.vo.TransactionVO;
 
 @Repository("performTransactionDAO")
-public class PerformTransactionDAOImpl implements PerformTransactionDAO{
+public class PerformTransactionDAOImpl implements PerformTransactionDAO {
 
 	@Autowired
 	private SessionFactory sessionFactory;

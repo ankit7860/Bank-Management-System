@@ -26,8 +26,7 @@ td {
 		<table>
 			<tr>
 				<td>Account Holder Name</td>
-				<td><input type="text"
-					name="accountHolderName"
+				<td><input type="text" name="accountHolderName"
 					value="<%=request.getParameter("accountHolderName") != null ? request.getParameter("accountHolderName") : ""%>" />
 					<div class="danger">${errors.accountHolderName}</div></td>
 			</tr>

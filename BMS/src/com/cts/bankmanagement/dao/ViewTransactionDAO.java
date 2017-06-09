@@ -14,6 +14,4 @@ public interface ViewTransactionDAO {
 
 	List<TransactionVO> getTransactionDetails(Long transactionId);
 
-
-
 }

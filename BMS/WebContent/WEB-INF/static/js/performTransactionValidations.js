@@ -4,7 +4,7 @@ function ValidateMyForm() {
 	var transactionType = document.myform.transactionType.value;
 	var transactionAmount = document.myform.transactionAmount.value;
 	var description = document.myform.description.value;
-	if (accountNumber.length != 16 || isNaN(transactionAmount)) {
+	if (accountNumber.length != 16 || isNaN(accountNumber)) {
 		alert("Account Number must be at least 16 digits long & numeric.");
 		return false;
 	} else if (!(transactionType == "Deposit" || transactionType == "Withdrawal")) {

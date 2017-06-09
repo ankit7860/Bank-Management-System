@@ -23,10 +23,12 @@ public class UserVO {
 	@Size(min = 8, max = 16, message = "Account holder name should have between 8 and 16 characters")
 	private String accountHolderName;
 
+	@NotNull(message = "Account Balance name can't be empty")
 	private Double accountBalance;
 
 	private Long transactionId;
 	private String description;
+	
 	@Pattern(regexp = "Deposit|Withrawal", message = "Empty or invalid transaction type")
 	private String transactionType;
 

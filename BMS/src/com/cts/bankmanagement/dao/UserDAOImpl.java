@@ -25,7 +25,7 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public Long addUserDetails(UserVO userVO){
+	public Long addUserDetails(UserVO userVO) {
 		User user = prepareUser(userVO);
 		Long accountNumber = (Long) sessionFactory.getCurrentSession().save(user);
 		return accountNumber;

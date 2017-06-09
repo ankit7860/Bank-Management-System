@@ -13,34 +13,37 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script
+<script
 	src="/BaseCodeSlice_BankManagementSystem/pages/js/viewtransationvalidation.js"></script>
 
 </head>
 <div>
 	<%@ include file="/WEB-INF/static/html/Header.html"%>
 </div>
-<body class="main" background="/BaseCodeSlice_BankManagementSystem/pages/Images/A.jpg">
+<body class="main"
+	background="/BaseCodeSlice_BankManagementSystem/pages/Images/A.jpg">
 	<div class="container">
 
 		<h1 style="margin-top: 2cm" align="center">Enter Your details</h1>
 		<br> <br>
-		<form class="form-horizontal form1" action="viewTransaction" onsubmit="return ValidateMyForm()" name="viewform"
-			method="get">
+		<form class="form-horizontal form1" action="viewTransaction"
+			onsubmit="return ValidateMyForm()" name="viewform" method="get">
 			<div class="form-group row" style="margin-top: 1cm">
 				<label class="control-label col-sm-4" for="accountNumber">Account
 					Number:</label>
 				<div class="col-sm-6">
-					<input type="text" class="form-control" id="accountNumber" maxlength="16"
-						name="accountNumber" placeholder="Enter Account Number" >
+					<input type="text" class="form-control" id="accountNumber"
+						maxlength="16" name="accountNumber"
+						placeholder="Enter Account Number">
 				</div>
 			</div>
 			<div class="form-group row">
 				<label class="control-label col-sm-4" for="transactionId">Transaction
 					Id:</label>
 				<div class="col-sm-6">
-					<input type="text" class="form-control" id="transactionId" maxlength="10"
-						name="transactionId" placeholder="Enter Transaction Id" >
+					<input type="text" class="form-control" id="transactionId"
+						maxlength="10" name="transactionId"
+						placeholder="Enter Transaction Id">
 				</div>
 			</div>
 			<div class="form-group ">

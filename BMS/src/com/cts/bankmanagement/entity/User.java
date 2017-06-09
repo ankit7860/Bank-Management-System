@@ -19,7 +19,6 @@ public class User implements Serializable {
 	private static final long serialVersionUID = 1898989899899L;
 
 	@Id
-	/*@GeneratedValue(strategy = GenerationType.AUTO)*/
 	@Column(name = "ACCOUNT_NUMBER")
 	private Long accountNumber;
 
@@ -46,7 +45,6 @@ public class User implements Serializable {
 
 	public User(Long transactionId, Long accountNumber2, String desciption, String transactionType,
 			Double accountBalance2) {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Long getAccountNumber() {

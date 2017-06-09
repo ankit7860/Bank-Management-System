@@ -14,26 +14,18 @@
 
 <body
 	background="/BaseCodeSlice_BankManagementSystem/pages/Images/A.jpg">
-
-<div>
-<%@ include file = "/WEB-INF/static/html/Header.html" %>
-</div>
-
+	<div>
+		<%@ include file="/WEB-INF/static/html/Header.html"%>
+	</div>
 	<table>
-
 		<marquee behavior="scrolling" direction="left">
 			<span class="morquee1"> MORE THAN JUST MONEY.</span></b>
 			</h2>
 		</marquee>
-
 		<div style="margin-left: 200px">
-
-
-
 			<tr>
 				<td>
 					<div style="width: 700px" align="left" class="imageSlider">
-
 						<img class="mySlides"
 							src="/BaseCodeSlice_BankManagementSystem/pages/Images/Homepageslider/1.jpg"></a>
 						<img class="mySlides"
@@ -42,11 +34,9 @@
 							src="/BaseCodeSlice_BankManagementSystem/pages/Images/Homepageslider/3.jpg"></a>
 						<img class="mySlides"
 							src="/BaseCodeSlice_BankManagementSystem/pages/Images/Homepageslider/4.jpg"></a>
-
 					</div> <script>
 						var myIndex = 0;
 						carousel();
-
 						function carousel() {
 							var i;
 							var x = document.getElementsByClassName("mySlides");
@@ -64,9 +54,6 @@
 						}
 					</script>
 				</td>
-
-
-
 				<td align=""></td>
 			</tr>
 		</div>
@@ -75,10 +62,7 @@
 		</tr>
 	</table>
 </body>
-
-
 <div>
-<%@ include file = "/WEB-INF/static/html/Footer.html" %>
+	<%@ include file="/WEB-INF/static/html/Footer.html"%>
 </div>
-
 </html>
