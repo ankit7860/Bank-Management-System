@@ -1,4 +1,4 @@
-package com.bankmanagement.vo;
+package com.cts.bankmanagement.vo;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -16,7 +16,7 @@ public class TransactionVO {
 	@Size(min = 8, max = 16, message = "Account holder name should have between 8 and 16 characters")
 	private String customerName;
 
-	@Pattern(regexp = "(?i)Deposit|(?i)Withrawal", message = "Empty or invalid transaction type")
+	@Pattern(regexp = "Deposit|Withdrawal", message = "Empty or invalid transaction type")
 	private String transactionType;
 
 	@NotNull(message = "Transaction Amount should be greater 0")
