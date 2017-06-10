@@ -1,4 +1,4 @@
-package com.bankmanagement.service;
+package com.cts.bankmanagement.service;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
-import com.bankmanagement.controller.PerformTransactionController;
-import com.bankmanagement.dao.PerformTransactionDAO;
-import com.bankmanagement.dao.UserDAO;
-import com.bankmanagement.exception.BankManagementException;
-import com.bankmanagement.vo.TransactionVO;
-import com.bankmanagement.vo.UserVO;
+import com.cts.bankmanagement.controller.PerformTransactionController;
+import com.cts.bankmanagement.dao.PerformTransactionDAO;
+import com.cts.bankmanagement.dao.UserDAO;
+import com.cts.bankmanagement.exception.BankManagementException;
+import com.cts.bankmanagement.vo.TransactionVO;
+import com.cts.bankmanagement.vo.UserVO;
 
 @Service("performTransactionService")
 public class PerformTransactionServiceImpl implements PerformTransactionService {
@@ -30,11 +30,11 @@ public class PerformTransactionServiceImpl implements PerformTransactionService 
 	public void init() {
 		if (CollectionUtils.isEmpty(userDAO.getUsersDetails())) {
 			log.info("adding User Details to User_details table");
-			UserVO user1 = new UserVO(1234567891234567L, "Salary", "Ankit Pal", 20000D);
-			UserVO user2 = new UserVO(1234567891234561L, "Saving", "Ambesh Sharma", 30000D);
-			UserVO user3 = new UserVO(1234567891234562L, "Saving", "Aviral Sharma", 40000D);
-			UserVO user4 = new UserVO(1234567891234563L, "Salary", "shubham Khare", 50000D);
-			UserVO user5 = new UserVO(1234567891234564L, "Salary", "Tanuj Tripathy", 20000D);
+			UserVO user1 = new UserVO(1000000000000001L, "Salary", "Ankit Pal", 20000D);
+			UserVO user2 = new UserVO(1000000000000002L, "Saving", "Ambesh Sharma", 30000D);
+			UserVO user3 = new UserVO(1000000000000003L, "Saving", "Aviral Sharma", 40000D);
+			UserVO user4 = new UserVO(1000000000000004L, "Salary", "shubham Khare", 50000D);
+			UserVO user5 = new UserVO(1000000000000005L, "Salary", "Tanuj Tripathy", 20000D);
 			userDAO.addUserDetails(user1);
 			userDAO.addUserDetails(user2);
 			userDAO.addUserDetails(user3);
@@ -46,9 +46,8 @@ public class PerformTransactionServiceImpl implements PerformTransactionService 
 	@Transactional
 	@Override
 	public Double updateTransactionDetails(TransactionVO transactionVO) throws BankManagementException {
-		Long transactionId = null;
-		setTransactionId(transactionVO);
-
+		Long transactionId = setTransactionId(transactionVO);
+		transactionVO.setTransactionId(transactionId);
 		log.info("checking validation");
 		validateData(transactionVO);
 
@@ -90,12 +89,7 @@ public class PerformTransactionServiceImpl implements PerformTransactionService 
 			log.warn("Customer Name does not exists");
 			throw new BankManagementException("Customer Name does not exists");
 		}
-		transactionId = performTransactionDAO.updateTransactionDetails(transactionVO);
-		if (transactionId == null) {
-			log.error("FATAL ERROR OCCURED!");
-			throw new BankManagementException("FATAL ERROR OCCURED!");
-		}
-
+		performTransactionDAO.updateTransactionDetails(transactionVO);
 		return userVO.getAccountBalance();
 	}
 
@@ -127,11 +121,11 @@ public class PerformTransactionServiceImpl implements PerformTransactionService 
 	}
 
 	@Override
-	public void setTransactionId(TransactionVO transactionVO) throws BankManagementException {
+	public Long setTransactionId(TransactionVO transactionVO) throws BankManagementException {
 		log.info("method for generate transaction Id");
-		Long count = performTransactionDAO.getTransactionId();
+		Long count = performTransactionDAO.getTransactionCount();
 		Long transactionId = 1000000001 + count;
-		transactionVO.setTransactionId(transactionId);
+		return transactionId;
 	}
 
 }
