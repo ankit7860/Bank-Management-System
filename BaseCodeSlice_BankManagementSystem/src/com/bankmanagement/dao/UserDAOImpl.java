@@ -1,4 +1,4 @@
-package com.bankmanagement.dao;
+package com.cts.bankmanagement.dao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.bankmanagement.entity.User;
-import com.bankmanagement.vo.UserVO;
+import com.cts.bankmanagement.entity.User;
+import com.cts.bankmanagement.vo.UserVO;
 
 @Repository("userDao")
 public class UserDAOImpl implements UserDAO {
