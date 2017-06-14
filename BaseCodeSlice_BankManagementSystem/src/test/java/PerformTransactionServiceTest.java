@@ -11,11 +11,11 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.bankmanagement.exception.BankManagementException;
-import com.bankmanagement.service.PerformTransactionService;
-import com.bankmanagement.service.UserService;
-import com.bankmanagement.vo.TransactionVO;
-import com.bankmanagement.vo.UserVO;
+import com.cts.bankmanagement.exception.BankManagementException;
+import com.cts.bankmanagement.service.PerformTransactionService;
+import com.cts.bankmanagement.service.UserService;
+import com.cts.bankmanagement.vo.TransactionVO;
+import com.cts.bankmanagement.vo.UserVO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath*:bms_test-context.xml" })

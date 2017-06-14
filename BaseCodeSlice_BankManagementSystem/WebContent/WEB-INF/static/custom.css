@@ -1,0 +1,83 @@
+.main {
+	background-color: #81a8bb;
+	color: white;
+}
+
+.form1 {
+	opacity: 0.9;
+	border-radius: 25px;
+	background-color: #616f75;
+	padding: 2px;
+}
+
+.head {
+	background: #F36749;
+	border-radius: 5px 5px 0px 0px;
+	padding: 15px;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+}
+
+.header1 {
+	font-family: times new roman;
+	color: black;
+	font-size: 2.00em;
+	font-weight: bold;
+}
+
+.header2 {
+	background: #DFA480;
+	border-radius: 5px 5px 0px 0px;
+	padding: 5px;
+}
+
+.table1 {
+	border: "0";
+	cellspacing: "2";
+	cellpadding: "10px";
+	width: "40%";
+	height: "10%";
+}
+
+.t1_elements {
+	color: black;
+	text-decoration: none;
+}
+
+.sliderImages {
+	style ="color: black;
+	text-decoration: none;
+}
+
+.morquee1 {
+	font-family: times new roman;
+	color: black;
+	font-size: 2.00em;
+	font-weight: bold;
+}
+
+.mySlides {
+	width: 1360px;
+	height: 400px;
+}
+
+.footer1 {
+	height: auto;
+	background-color: #F36749;
+}
+
+.footer2{
+	background: #DFA480; 
+	border-radius: 5px 5px 0px 0px;
+	 padding: 5px;
+}
+
+.footer_span{
+	font-family: verdana, arial; 
+	color: #D4D4D4; 
+	font-size: 0.7500em; 
+	font-weight: bold;
+}

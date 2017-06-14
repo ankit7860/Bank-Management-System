@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <link rel="stylesheet"
+       href="../../custom.css">
+<script
+       src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="main">
+    <div class="container">
+       
+        <h1 style="margin-top: 2cm" align="center">Enter Your details</h1>
+        <br>
+        <br>
+        <form class="form-horizontal form1">
+            <div class="form-group row" style="margin-top: 1cm">
+                <label class="control-label col-sm-4" for="accNumber">Account Number:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="accNumber"
+                        placeholder="Enter Account Number" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-4" for="transId">Transaction Id:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="transId"
+                        placeholder="Enter Transaction Id" required>
+                </div>
+            </div>
+            <div class="form-group ">
+                <div class="col-sm-offset-4 col-sm-6">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Get Loan Details</button>&nbsp;&nbsp;&nbsp;
+                    <button type="reset" class="btn" name="reset" value="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

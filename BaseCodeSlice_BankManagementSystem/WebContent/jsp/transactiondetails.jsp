@@ -1,3 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,38 +28,43 @@
 <script
 	src="/BaseCodeSlice_BankManagementSystem/pages/js/performTransactionValidations.js"></script>
 </head>
-<body>
-	<table>
-			<div class="container">
-				<table class="table table-striped">
-				<caption><h1 align="center">Your Transaction details are:</h1></caption>
-				<c:forEach var="listValue" items="${details}">
-					<thead>
-						<tr>
-							<th>Detail Name</th>
-							<th>Details</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Transaction Type :</td>
-							<td>${listValue.transactionType}</td>
-						</tr>
-						<tr>
-							<td>Transaction Id :</td>
-							<td>${listValue.transactionId}</td>
-						</tr>
-						<tr>
-							<td>Account Balance :</td>
-							<td>${listValue.accountBalance}</td>
-						</tr>
-						<tr>
-							<td>Account Number :</td>
-							<td>${listValue.accountNumber}</td>
-						</tr>
-						</c:forEach>
-					</tbody>
-				</table>
-			</div>
+<body background="/BaseCodeSlice_BankManagementSystem/pages/Images/A.jpg">
+	<table class="table table-striped" border="4" cellpadding="5"
+		width="85%" height="100">
+		<caption><h1 align="center">Your Transaction details are:</h1></caption>
+
+		<tr>
+			<th>Account Number</th>
+			<th>Account Holder Name</th>
+			<th>Transaction Type</th>
+			<th>Transaction Id</th>
+			<th>Transaction Amount</th>
+			<th>Account Balance</th>
+		</tr>
+		<c:forEach var="listValue" items="${transactionDetails}">
+			<tr>
+				<td>${listValue.accountNumber}</td>
+				<td>${listValue.userVO.accountHolderName}</td>
+				<td>${listValue.transactionType}</td>
+				<td>${listValue.transactionId}</td>
+				<td>${listValue.transactionAmount}</td>
+				<td>${listValue.userVO.accountBalance}</td>
+			</tr>
+		</c:forEach>
+	</table>
+	<div>
+		<a
+			href="/BaseCodeSlice_BankManagementSystem/jsp/performTransaction.jsp">
+			<button type="button" style="font-size: 1cm" class="btn btn-primary btn-sm btn-block">
+				Make Another Transaction</button>
+		</a>
+	</div>
+	<div>
+		<a
+			href="/BaseCodeSlice_BankManagementSystem/jsp/viewTransaction.jsp">
+			<button type="button" style="font-size: 1cm" class="btn btn-default btn-sm btn-block glyphicon glyphicon-search">
+				View Your Transactions</button>
+		</a>
+	</div>
 </body>
 </html>
